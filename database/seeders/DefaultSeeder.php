@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
@@ -32,7 +34,7 @@ class DefaultSeeder extends Seeder
 
         $role = Role::create(['name' => 'user']);
 
-		// Users
+        // Users
         $admin = App\User::create([
             'name' => 'Admin',
             'email' => 'admin@example.com',
@@ -71,11 +73,10 @@ class DefaultSeeder extends Seeder
             'description' => 'Default category'
         ]);
 
-    	// Tags
+        // Tags
         $tag = App\Tag::create([
             'name' => 'News',
             'description' => 'A simple tag'
         ]);
-
     }
 }
