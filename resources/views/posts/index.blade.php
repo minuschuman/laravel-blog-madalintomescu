@@ -53,7 +53,7 @@
 
                 <span class="separator">/</span>
 
-                Posted in: 
+                Posted in:
 
                 @foreach ($post->categories as $category)
                 <a href="{{ route('categories.show', $category->slug) }}">
@@ -70,7 +70,7 @@
             </div>
 
             <p class="post-body mt-2">
-                {{ str_limit(strip_tags($post->body), 400) }}
+                {{  Illuminate\Support\Str::limit(strip_tags($post->body), 400) }}
             </p>
 
         </article>
