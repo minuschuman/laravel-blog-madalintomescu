@@ -21,10 +21,10 @@ class Category extends Model
 
     /**
      * Return the sluggable configuration array for this model.
-     * 
+     *
      * @return @array
      */
-    public function sluggable()
+    public function sluggable():array
     {
         return [
             'slug' => [
@@ -45,7 +45,7 @@ class Category extends Model
 
     /**
      * Set the default category for new posts.
-     * 
+     *
      * @throws ModelNotFoundException
      * @return string
      */
@@ -56,7 +56,7 @@ class Category extends Model
 
     /**
      * Get the posts that belongs to category.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function posts()

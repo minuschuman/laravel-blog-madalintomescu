@@ -41,10 +41,10 @@ class Post extends Model
 
     /**
      * Return the sluggable configuration array for this model.
-     * 
+     *
      * @return @array
-     */ 
-    public function sluggable()
+     */
+    public function sluggable(): array
     {
         return [
             'slug' => [
@@ -77,7 +77,7 @@ class Post extends Model
 
     /**
      * Get the user that created the post.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function user()
@@ -87,7 +87,7 @@ class Post extends Model
 
     /**
      * Get the comments that belongs to post.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function comments()
@@ -97,7 +97,7 @@ class Post extends Model
 
     /**
      * Get the categories that belongs to post.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function categories()
@@ -107,7 +107,7 @@ class Post extends Model
 
     /**
      * Get the tags that belongs to post.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function tags()

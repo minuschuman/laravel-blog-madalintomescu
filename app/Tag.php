@@ -20,10 +20,10 @@ class Tag extends Model
 
     /**
      * Return the sluggable configuration array for this model.
-     * 
+     *
      * @return @array
      */
-    public function sluggable()
+    public function sluggable(): array
     {
         return [
             'slug' => [
@@ -44,7 +44,7 @@ class Tag extends Model
 
     /**
      * Get the posts that belongs to tag.
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function posts()
